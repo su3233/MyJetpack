@@ -1,10 +1,14 @@
 package com.example.myjetpack.lifecycle;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
+
+import androidx.navigation.Navigation;
 
 import com.example.myjetpack.base.BaseActivity;
 import com.example.myjetpack.R;
+import com.example.myjetpack.fragment.MainFragmentArgs;
 
 /**
  * activity默认已经实现了LifecycleOwnew（被观察者），内部有一个getLifecycle方法接收一个LifecycleObserver（观察者）
@@ -45,6 +49,8 @@ public class LifeCycleActivity extends BaseActivity {
                 stopService(intent);
             }
         });
+
+
     }
 
 }

@@ -55,7 +55,18 @@ public class MainFragment extends Fragment {
     }
 
     private void initView(View view) {
-        view.findViewById(R.id.bt_to_second_fm).setOnClickListener(
-                Navigation.createNavigateOnClickListener(R.id.action_mainFragment_to_secondFragment));
+
+
+        view.findViewById(R.id.bt_to_second_fm).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new MainFragmentArgs.Builder().setUserName("xiaoMing").setAge(23).build().toBundle();
+                Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_secondFragment, bundle);
+//                Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_secondFragment);
+//                Navigation.createNavigateOnClickListener(R.id.action_mainFragment_to_secondFragment);
+            }
+        });
+
+
     }
 }

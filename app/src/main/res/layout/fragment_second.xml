@@ -6,8 +6,9 @@
     tools:context=".fragment.SecondFragment">
 
     <TextView
+        android:id="@+id/tv_show_arge"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:text="显示参数" />
 
 </FrameLayout>
