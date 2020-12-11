@@ -3,7 +3,7 @@ package com.example.myjetpack.lifecycle;
 import android.content.Intent;
 import android.view.View;
 
-import com.example.myjetpack.BaseActivity;
+import com.example.myjetpack.base.BaseActivity;
 import com.example.myjetpack.R;
 
 /**

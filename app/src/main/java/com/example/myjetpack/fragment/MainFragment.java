@@ -1,4 +1,4 @@
-package com.example.myjetpack;
+package com.example.myjetpack.fragment;
 
 import android.os.Bundle;
 
@@ -8,6 +8,8 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.myjetpack.R;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,7 +21,6 @@ public class MainFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
