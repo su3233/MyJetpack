@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.myjetpack.lifecycle.LifeCycleActivity;
+import com.example.myjetpack.navigation.NavigationActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initView() {
         findViewById(R.id.bt_life_cycle).setOnClickListener(this);
+        findViewById(R.id.bt_navigation).setOnClickListener(this);
     }
 
     @Override
@@ -26,6 +28,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.bt_life_cycle:
                 startActivity(new Intent(MainActivity.this, LifeCycleActivity.class));
+                break;
+            //bt_navigation
+            //NavigationActivity
+            case R.id.bt_navigation:
+                startActivity(new Intent(MainActivity.this, NavigationActivity.class));
                 break;
         }
     }
